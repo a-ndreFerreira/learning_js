@@ -1,0 +1,89 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    height: 100vh;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sectionContainer .title h1 {
+    font-size: 3rem;
+    margin-bottom: .5rem;
+}
+
+.sectionContainer .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.underline {
+    width: 6rem;
+    height: .5rem;
+    background-color: #cdcdcd;
+    border-radius: 4px;
+    margin-bottom: 2rem;
+}
+
+#imgPerson {
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 2.3rem;
+}
+
+h3 {
+    color: #555;
+    letter-spacing: .2rem;
+    margin-bottom: 2rem;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .3rem;
+    padding: .5rem;
+}
+
+button {
+    padding: .5rem .8rem;
+    border-radius: 8px;
+    background-color: #cdcdcd;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #fff;
+    border: 1px solid #555;
+}
+
+.informations {
+    max-width: 500px;
+    height: auto;
+    padding: .5rem;
+    box-shadow: 0 10px 5px 3px #ccc;
+    margin-bottom: 3.5rem;
+    border-radius: 8px;
+}
