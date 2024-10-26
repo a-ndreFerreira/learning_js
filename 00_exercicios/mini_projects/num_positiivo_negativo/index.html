@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Positivo Negativo</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <h1>
+            +/-
+        </h1>
+        <button class="btnBars">
+            =
+        </button>
+    </nav>
+
+    <!--modal instructions-->
+    <div class="instructions">
+        <h1>
+            Instruções
+        </h1>
+        <p>
+            Digite um número para verificar se é positivo ou negativo.
+        </p>
+    </div>
+
+    <div class="container">
+        <h2>
+            Positivo ou Negativo?
+        </h2>
+        <h1>
+            Resultado: <span class="span"></span>
+        </h1>
+
+        <form id="positiveNegativeForm" class="form">
+            <div class="input">
+                <input type="number" id="number" placeholder="Digite um número." />
+            </div>
+            <button class="submit">
+                Verificar
+            </button>
+        </form>
+
+    </div> <!--container-->
+
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>
