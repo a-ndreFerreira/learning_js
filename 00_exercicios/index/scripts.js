@@ -47,7 +47,7 @@ console.log('O número com incremento!', number08);
 
 
 //projetinhos simples 
-//ex09
+//ex09 feito
 const number = (value) => {
     if (value > 0) {
         console.log('Número positivo')
@@ -66,9 +66,9 @@ const mediaDoAluno = (nota01, nota02) => {
     const mediaNota = (nota01 + nota02) / 2;
 
     if (mediaNota >= 7 && mediaNota <= 10) {
-        console.log('Aluno Aprovado', mediaNota)
+        console.log('Aluno Aprovado com média, ', mediaNota)
     } else {
-        console.log('Aluno reprovado', mediaNota)
+        console.log('Aluno reprovado com média, ', mediaNota)
     };
 
 };
