@@ -19,4 +19,8 @@ Este é um espaço dedicado ao estudo e prática de JavaScript, onde eu exploro 
 
 1 - Positivo ou Negativo
 
-2 - Média aluno
+2 - Média Aluno
+
+3 - Posso Votar
+
+4 - Situação do Aluno

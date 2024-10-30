@@ -61,7 +61,7 @@ number(10);
 number(-5);
 number(0);
 
-//ex10
+//ex10 feito
 const mediaDoAluno = (nota01, nota02) => {
     const mediaNota = (nota01 + nota02) / 2;
 
@@ -74,7 +74,7 @@ const mediaDoAluno = (nota01, nota02) => {
 };
 mediaDoAluno(7, 8);
 
-//ex11
+//ex11 feito
 const voto = (idadeVotar) => {
     if (idadeVotar >= 18 && idadeVotar < 70) {
         console.log('Tenho ' + idadeVotar + ' anos, e tenho que votar.');
