@@ -8,7 +8,7 @@ const spanValue = document.querySelector('.spanValue');
 
 //messages
 const voteMessage = 'obrigatório.';
-const noVoteMessage = 'NÃO obrigatório.';
+const noVoteMessage = 'NÃO vota.';
 const opcionVoteMessage = 'facultativo.';
 const invalidMessage = 'Dados Inválidos.';
 const noLimitMessage = 'Idade acima do limite.';

@@ -86,7 +86,7 @@ const voto = (idadeVotar) => {
 };
 voto(70);
 
-//ex12
+//ex12 feito
 const situacaoAluno = (mediaAluno) => {
     if (mediaAluno >= 7) {
         console.log('Aluno aprovado com média: ' + mediaAluno);
@@ -96,7 +96,7 @@ const situacaoAluno = (mediaAluno) => {
 };
 situacaoAluno(7);
 
-//ex13
+//ex13 feito
 const imcCalc = (height, weight) => {
     const imc = (weight / (height * height)).toFixed(1);
 
@@ -108,3 +108,34 @@ const imcCalc = (height, weight) => {
 
 }
 imcCalc(1.78, 82);
+
+//ex 14 feito
+//divisivel por 4
+//exceto divisiveis 100, mas nao os por 400
+const anoBisexto = (ano) => {
+    if ((ano % 4 == 0 && ano % 100 != 0) || (ano % 400 == 0)) return console.log('Ano Bissexto');
+
+    return console.log('Não é um ano bissexto')
+}
+anoBisexto(2023);
+
+//ex15 feito
+const palindrome = (palavra) => {
+    const palavraInvertida = palavra.split('').reverse().join(''); //split transforma string em array, reverse, inverte, join tranforma array em atring
+    if (palavra === palavraInvertida) return console.log('A palavra é um palindrome.');
+
+    return console.log('Não é um palindrome.');
+
+}
+palindrome('gato');
+palindrome('arara');
+
+//ex16 feito
+const maxValue = (numValue1, numValue2, numValue3) => {
+    if (numValue1 > numValue2 && numValue1 > numValue3) return console.log('Número 1 é o maior');
+    if (numValue2 > numValue1 && numValue2 > numValue3) return console.log('Número 2 é o maior');
+    return console.log('Número 3 é o maior');
+}
+maxValue(1, 2, 3);
+maxValue(2, 3, 1);
+maxValue(3, 2, 1);

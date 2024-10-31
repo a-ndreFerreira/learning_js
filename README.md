@@ -24,3 +24,7 @@ Este é um espaço dedicado ao estudo e prática de JavaScript, onde eu exploro 
 3 - Posso Votar
 
 4 - Situação do Aluno
+
+5 - Calculadora IMC
+
+6 - Ano Bissexto
