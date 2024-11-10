@@ -28,3 +28,9 @@ Este é um espaço dedicado ao estudo e prática de JavaScript, onde eu exploro 
 5 - Calculadora IMC
 
 6 - Ano Bissexto
+
+7 - Palindrome
+
+8 - Maior Número
+
+9 - Par ou Ímpar
