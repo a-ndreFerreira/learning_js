@@ -4,7 +4,7 @@ const positiveNumber = 'O número é positivo.';
 const negativeNumber = 'O número é negativo.';
 const invalidMessage = 'Dados Inválidos.'
 
-const number = document.querySelector('#number'); //input
+const numberVal = document.querySelector('#number'); //input
 // const btn = document.querySelector('.submit'); //botao
 const formSubmit = document.querySelector('#positiveNegativeForm'); //submitForm
 const value = document.querySelector('.span');
@@ -30,12 +30,12 @@ const checkNumber = (numberStr) => {
 formSubmit.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    const numberStr = number.value.trim();
+    const numberStr = numberVal.value.trim();
 
     const verificacao = checkNumber(numberStr);
 
     value.textContent = verificacao;
 
-    number.value = '';
+    numberVal.value = '';
 
 });

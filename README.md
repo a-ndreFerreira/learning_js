@@ -34,3 +34,11 @@ Este é um espaço dedicado ao estudo e prática de JavaScript, onde eu exploro 
 8 - Maior Número
 
 9 - Par ou Ímpar
+
+10 - Pode dirigir
+
+11 - O número está no Intervalo
+
+12 - Classificação do Aluno
+
+13 - Estação do Ano

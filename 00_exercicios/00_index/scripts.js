@@ -140,7 +140,7 @@ maxValue(1, 2, 3);
 maxValue(2, 3, 1);
 maxValue(3, 2, 1);
 
-//ex17
+//ex17 feito
 const parImpar = (parImp) => {
     if (parImp % 2 === 0) return console.log('Número par');
     return console.log('Número impar');
@@ -148,7 +148,7 @@ const parImpar = (parImp) => {
 parImpar(5);
 parImpar(8);
 
-//ex18
+//ex18 feito
 const podeDirigir = (idadeDirigir) => {
     if (idadeDirigir >= 18) return console.log('Pode dirigir.');
     return console.log('Nao pode dirigir.');
@@ -157,7 +157,7 @@ podeDirigir(15);
 podeDirigir(18);
 podeDirigir(45);
 
-//ex19
+//ex19 feito
 const dentroDoIntervalo = (n, limiteMin, limiteMax) => {
     if (n <= limiteMax && n >= limiteMin) return console.log('Número esta dentro do intervalo.');
     return console.log('Número não esta no intervalo.');
@@ -166,7 +166,7 @@ dentroDoIntervalo(3, 1, 37);
 dentroDoIntervalo(56, 12, 500);
 dentroDoIntervalo(34, 45, 78);
 
-//ex20
+//ex20 feito
 const classifAluno = (notaClass) => {
     if (notaClass > 100 || notaClass < 0) return console.log('Dados Invalidos');
 
@@ -183,7 +183,7 @@ classifAluno(82);
 classifAluno(74);
 classifAluno(62);
 
-//ex21
+//ex21 feito
 const estacao = (mes) => {
     if (mes < 3 || mes === 12) {
         console.log('Verão');
@@ -208,7 +208,7 @@ estacao(7);
 estacao(8);
 estacao(11);
 
-//ex22
+//ex22 feito
 const diasMes = (diasmes) => {
     switch (diasmes) {
         case 2:
@@ -228,7 +228,7 @@ diasMes(2);
 diasMes(4);
 diasMes(1);
 
-//ex23
+//ex23 feito
 const semaforo = (cor) => {
     if (cor === 'verde') {
         console.log('Siga em frente.');
@@ -407,3 +407,106 @@ for (let n36 = 1; n36 <= 100; n36++) {
 }
 
 //ex37
+let somaQuadrados = 0;
+let i37 = 1;
+while (i37 <= 10) {
+    somaQuadrados += i37 * i37;
+    i37++;
+}
+console.log(somaQuadrados);
+
+//ex38
+let somaCubo = 0;
+let i38 = 1;
+do {
+    somaCubo += i38 * i38 * i38;
+    i38++;
+
+} while (i38 <= 10);
+console.log(somaCubo);
+
+//ex39
+let num39 = 5;
+let fatorial = 1;
+for (let i = 1; i <= num39; i++) {
+    fatorial *= i;
+}
+console.log(`O fatorial do ${num39} é ${fatorial}`);
+
+//ex40 virou loop infinito, nao soube usar o while,corrigido!
+let str40 = 'HelloWorld';
+let invertStr = ''; //string vazia para receber o valor invertido
+let i40 = str40.length - 1; //voce precisa verificar o tamanho da string
+while (i40 >= 0) {
+    invertStr += str40[i40]; //invert string recebe uma letra por vez do loop
+    i40--; //diminui a string, a cada loop, a ultima letra vai para invertStr
+}
+console.log(`A palavra ${str40}, invertida fica... ${invertStr}`);
+
+//ex40 //inverti a string assim! =/
+let textStr = 'JavaScript';
+let invertStr2 = textStr.split('').reverse().join('');
+console.log(invertStr2);
+
+//ex41
+let numDec = 10;
+let binario = '';
+
+do {
+    binario = (numDec % 2) + binario;
+    numDec = Math.floor(numDec / 2);
+
+} while (numDec > 0);
+console.log(`O número em binario é: ${binario}`);
+
+//ex42
+let binaNum = '1010';
+let decimalNum = 0;
+
+for (let i = binaNum.length - 1, j = 0; i >= 0; i--, j++) {
+    decimalNum += parseInt(binaNum[i]) * Math.pow(2, j);
+};
+console.log(`O número em decimal é: ${decimalNum}`);
+
+//ex43
+let nInicial = '101';
+let nFinal = '';
+let nIndex = nInicial.length - 1;
+
+while (nIndex >= 0) {
+    nFinal += nInicial[nIndex];
+    nIndex--;
+}
+console.log(nFinal === nInicial ? 'Número é palíndrome' : 'Número não é palíndrome');
+
+//ex43 //resolucao do professor, revisando
+let nu = 1212;
+let inv = 0;
+let temp = nu;
+while (temp > 0) {
+    let digito = temp % 10;
+    inv = (inv * 10) + digito;
+    temp = Math.floor(temp / 10);
+};
+console.log(nu === inv ? 'Palíndrome' : 'Não é palíndrome');
+
+//ex44
+let matriz1 = [[1, 2], [1, 2]];
+let matriz2 = [[2, 3], [2, 3]];
+
+let soma44 = [];
+let index = 0;
+
+do {
+    let j = 0;
+    soma44[index] = [];
+
+    do {
+        soma44[index][j] = matriz1[index][j] + matriz2[index][j];
+        j++;
+    } while (j < matriz1[index].length);
+
+    index++;
+
+} while (index < matriz1.length);
+console.log(JSON.stringify(soma44));
