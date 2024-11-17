@@ -247,19 +247,19 @@ semaforo('marrom');
 semaforo('cinza');
 
 //loops for, while, do-while
-//ex24
+//ex24 feito
 for (let i = 0; i <= 10; i++) { //for é util quando se sabe quantas vezes queremos o loop
     console.log(i);
 };
 
-//ex25
+//ex25 feito
 let j = 10;
 while (j >= 1) { //while é util quando nao se sabe quantas vezes queremos o loop
     console.log(j);
     j--;
 }
 
-//ex26
+//ex26 feito
 let k = 1;
 do {
     if (k % 2 === 1) {
@@ -268,12 +268,12 @@ do {
     k++;
 } while (k <= 20);
 
-//ex27
+//ex27 feito
 for (let i = 1; i <= 10; i++) {
     console.log(`5 x ${i} = ${5 * i}`);
 }
 
-//ex28
+//ex28 feito
 let l = 1;
 let som = 0;
 while (l <= 100) {
@@ -282,7 +282,8 @@ while (l <= 100) {
 }
 console.log(som);
 
-//ex29
+//ex29 feito
+
 // let a = 1;
 // do {
 //     console.log(a++);
@@ -296,7 +297,7 @@ do {
     a++;
 } while (a <= 100);
 
-//ex30
+//ex30 feito
 for (let num = 2; num <= 100; num++) {
     let isPrime = true;
 
@@ -312,7 +313,8 @@ for (let num = 2; num <= 100; num++) {
     }
 };
 
-//ex31
+//ex31 feito
+// adivinhando o numero pelo metodo de pesquisa binaria
 let min = 1;
 let max = 100;
 let chute = Math.floor((max + min) / 2);
@@ -327,7 +329,7 @@ while (chute !== numPens) {
 }
 console.log('Numero pensado foi', chute);
 
-//ex32
+//ex32 feito
 let userChoice = 'pedra';
 let computerChoice;
 let result;
@@ -357,7 +359,7 @@ do {
 
 } while (result === 'Empate')
 
-//ex33
+//ex33 feito
 let n1 = 0;
 let n2 = 1;
 

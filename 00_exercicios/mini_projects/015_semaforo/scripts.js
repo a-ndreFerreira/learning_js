@@ -33,7 +33,7 @@ const getMessageLight = (color) => {
 formTL.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    const colorInput = String(inputTL.value.trim()).toLowerCase();
+    const colorInput = inputTL.value.trim().toLowerCase();
 
     const lightMessage = getMessageLight(colorInput);
 

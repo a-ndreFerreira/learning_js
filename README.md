@@ -42,3 +42,9 @@ Este é um espaço dedicado ao estudo e prática de JavaScript, onde eu exploro 
 12 - Classificação do Aluno
 
 13 - Estação do Ano
+
+14 - Dias do Mês
+
+15 - Semáforo
+
+16 - Imprimir números com loops, exercícios
